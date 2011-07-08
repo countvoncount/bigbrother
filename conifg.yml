@@ -1,0 +1,36 @@
+db:
+    clicksession:
+        user: palaran
+        password: palaran
+        host: localhost
+        port: 3306
+        db: palaranlocal
+    pixeldb:
+        user: palaran_readonly
+        password: ggk543lt  
+        host: dbi-palaran-note1-prod.cfghslfmi2ko.us-east-1.rds.amazonaws.com
+        port: 3306
+        db: pixeldb
+    proxydb:
+        host: dbi-palaran-ap1-prod.cfghslfmi2ko.us-east-1.rds.amazonaws.com
+        port: 3306
+        db: proxydb
+        user: palaran_readonly
+        password: ggk543lt
+ 
+clickchurn:
+    opensessionpath: ./pickles/openSessions.pkl
+ordercorrelator: 
+    laststoreloadedpath: ./pickles/lastStoreLoaded.pkl
+
+sophie:
+    proxyserver:
+        url: 'http://ec2-75-101-245-208.compute-1.amazonaws.com:8080'
+    db:
+        merchant:
+            host: dbi-palaran-backend1-prod.cfghslfmi2ko.us-east-1.rds.amazonaws.com
+            port: 3306
+            name: merchant_db_live
+            username: palaran_readonly
+            password: ggk543lt
+        
